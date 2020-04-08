@@ -3,110 +3,145 @@
     <div class="col-12 full-width">
       <q-carousel v-model="slide">
         <q-carousel-slide :name="1" img-src="statics/slides/slide.jpg" class="row items-center">
-          <div class="text-white">
-            <div class="text-h2 text-bold">Agrolog</div>
+          <div class="text-white absolute-full flex flex-center" style="background: rgba(0,0,0,0.5)">
+            <div class="q-px-md">
+              <div class="text-h2 text-bold">Agrolog</div>
             <div
-              class="text-h4 text-weight-light q-mt-md"
+              :class="($q.screen.lt.md?'text-subtitle1 ':'text-h4 ')+ 'text-weight-thin q-mt-md text-capitalize'"
             >creating innovations to lift the poor and transform them into the engine of economic growth</div>
           </div>
+            </div>
+
         </q-carousel-slide>
       </q-carousel>
     </div>
 
-    <div class="col-12 q-px-xl q-py-lg">
-      <div class="text-h2">WHO WE ARE</div>
-      <div class="q-my-sm" style="width:200px">
-        <q-separator color="primary" />
-        <q-separator color="primary" />
+    <div class="col-12 q-px-xl q-py-lg flex flex-center">
+      <div >
+        <div class="text-h2">WHO WE ARE</div>
+        <div class="q-my-sm" style="width:200px">
+          <q-separator color="primary" />
+          <q-separator color="primary" />
+        </div>
+
+        <p :style="$q.screen.lt.md?'':'font-size:18px'" class="text-weight-light">
+          AGROLOG is a company registered in Nigeria with a vision to createsocial
+          innovations that will lift the rural poor out of poverty and transform them
+          into the engine of economic growth .
+          <!-- <q-btn flat no-caps dense color="secondary" label="Read More" :to="{name: 'about'}" /> -->
+        </p>
       </div>
 
-      <p>
-        AGROLOG is a company registered in Nigeria with a vision to createsocial innovations that will lift the rural poor out of poverty and transform them into the engine of economic growth .
-        <q-btn flat no-caps dense color="secondary" label="Read More" :to="{name: 'about'}" />
-      </p>
     </div>
+    <q-card dark flat square>
+      <q-card-section class="row column q-py-xl flex flex-center" >
+       <div class="col-12 q-px-md q-py-lg">
+        <div class="text-h2">WHAT WE DO</div>
+        <div class="q-my-sm" style="width:200px">
+          <q-separator color="primary" />
+          <q-separator color="primary" />
+        </div>
 
-    <div class="col-12 row flex-center">
-      <div style="max-width: 750px" class="row flex-center">
-        <q-card flat class="col-md-4 col-sm-12">
-          <q-card-section class="row flex-center column">
-            <div>
-              <q-img src="statics/hub.png" style="width: 65px;" />
-            </div>
-            <div class="text-center" style="max-width: 200px">
-              We operate a hub at Kachia in Kaduna state where produce
-              is evaluated, graded, branded for the market as well as for value addition.
-            </div>
-          </q-card-section>
-        </q-card>
-        <q-card flat class="col-md-4 col-sm-12">
-          <q-card-section class="row flex-center column">
-            <div>
-              <q-img src="statics/groups.png" style="width: 65px;" />
-            </div>
-            <div class="text-center" style="max-width: 200px">
-              serviced by cooperative clusters from 12 Local Government
-              Areas that grow ginger.
-            </div>
-          </q-card-section>
-        </q-card>
-        <q-card flat class="col-md-4 col-sm-12">
-          <q-card-section class="row flex-center column">
-            <div>
-              <q-img src="statics/service.png" style="width: 65px;" />
-            </div>
-            <div class="text-center" style="max-width: 200px">
-              AgroLog is working to establish 10 service centers that will
-              provide farmers with mechanization
-            </div>
-          </q-card-section>
-        </q-card>
+        <p>
+          We are growing a  <q-btn color="secondary" flat dense no-caps label="community of smallholder farmers" :to="{name: 'communityOfFarmers'}" />
+          to produce quality Ginger/Tumeric
+          and soy beans sustainably. Allproduce that meet the AgroLog seal of
+          quality arenurtured with a consciousness of a tradition of
+          responsibility at every stage from land preparation to harvest.
+          The core of that tradition being aflatoxin free, quality produce that meets
+          global best practices and standards.
+          The overarching goal is create an enterprise
+          in farming for these smallholder farmers with  <q-btn color="secondary" flat dense no-caps label="social safety nets" :to="{name: 'socialSafety'}" /> that assure them
+          and their families of a future that would otherwise remain elusive.
+          <q-btn flat no-caps dense color="secondary" label="Read More" :to="{name: 'about'}" />
+        </p>
       </div>
-    </div>
+       <div class="col-12 row flex-center">
+        <div style="max-width: 800px" class="row flex-center q-pb-md">
+          <div class="q-pa-xs">
+            <q-card dark bordered flat class=" col-md-4 col-sm-12" style="height: 250px">
+              <q-card-section class="row flex-center column">
+                <div>
+                  <q-img src="statics/hub.png" style="width: 65px;" />
+                </div>
+                <div class="text-h6 text-weight-light">Our Hub</div>
+                <div class="text-center text-caption" style="max-width: 200px">
+                  We operate a hub at Kachia in Kaduna state where produce
+                  is evaluated, graded, branded for the market as well as for value addition.
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
+
+          <div class="q-pa-xs">
+            <q-card dark bordered flat class=" col-md-4 col-sm-12" style="height: 250px">
+              <q-card-section class="row flex-center column">
+                <div>
+                  <q-img src="statics/groups.png" style="width: 65px;" />
+                </div>
+                <div class="text-h6 text-weight-light">Clusters</div>
+                <div class="text-center" style="max-width: 200px">
+                  serviced by cooperative clusters from 12 Local Government
+                  Areas that grow ginger.
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
+
+          <div class="q-pa-xs">
+            <q-card dark bordered flat class=" col-md-4 col-sm-12" style="height: 250px">
+              <q-card-section class="row flex-center column">
+                <div>
+                  <q-img src="statics/service.png" style="width: 65px;" />
+                </div>
+                <div class="text-h6 text-weight-light">Service Centers</div>
+                <div class="text-center" style="max-width: 200px">
+                  AgroLog is working to establish 10 service centers that will
+                  provide farmers with mechanization
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
+
+        </div>
+      </div>
+      </q-card-section>
+    </q-card>
+
+
+
 
     <div class="col-12">
-      <q-card dark flat square>
-        <q-card-section class="row q-py-xl">
-          <div class="text-h4">HOW YOU CAN JOIN US</div>
-          <div>
-            AgroLogis open to partnership with institutional as well as individual investors
-            and Donor organisationsto structure financing packages for its smallholder farmer
-            members for returns and social impac. for details
-            <q-btn color="primary" flat dense no-caps label="click" />
+      <q-card flat square>
+
+        <q-card-section class="row column q-py-xl flex flex-center" >
+          <div class="text-center" style="max-width: 800px">
+            <div class="text-h4 text-weight-light">HOW YOU CAN JOIN US</div>
+            <div class="text-body1 text-weight-light q-pa-sm">
+             AgroLog is open to partnership with institutional as well as individual investors
+            and Donor organisations to structure financing packages for its small holder farmer
+            members for returns and social impact. for details<q-btn color="secondary" flat dense no-caps label="read more" />
+            </div>
           </div>
+
         </q-card-section>
       </q-card>
     </div>
 
-    <div class="col-12 q-px-xl q-py-lg">
-      <div class="text-h2">WHAT WE DO</div>
-      <div class="q-my-sm" style="width:200px">
-        <q-separator color="primary" />
-        <q-separator color="primary" />
-      </div>
 
-      <p>
-        We are growing a community of smallholder farmers to produce quality Ginger/Tumeric
-        and soy beans sustainably. Allproduce that meet the AgroLog seal of
-        quality arenurtured with a consciousness of a tradition of
-        responsibility at every stage from land preparation to harvest.
-        The core of that tradition being aflatoxin free, quality produce that meets
-        global best practices and standards. The overarching goal is create an enterprise
-        in farming for these smallholder farmers with social safety nets that assure them
-        and their families of a future that would otherwise remain elusive.
-        <q-btn flat no-caps dense color="secondary" label="Read More" :to="{name: 'about'}" />
-      </p>
-    </div>
 
     <div class="col-12">
       <q-card dark flat square>
-        <q-card-section class="row column q-py-xl">
-          <div class="text-h4">OUR SERVICES</div>
-          <div>
-            Agrologprovides its community of farmers servces inboth backward and
-            forward integrationcomponents of the value chains. To access service
-            <q-btn color="primary" flat dense no-caps label="click" />
+        <q-card-section class="row column q-py-xl flex flex-center" >
+          <div class="text-center" style="max-width: 800px">
+            <div class="text-h4 text-weight-light">OUR SERVICES</div>
+            <div class="text-body1 text-weight-light q-pa-sm">
+              Agrolog provides its community of farmers servces in both backward and
+              forward integration components of the value chains. To access service
+              <q-btn color="secondary" flat dense no-caps label="read more" />
+            </div>
           </div>
+
         </q-card-section>
       </q-card>
     </div>
@@ -197,22 +232,22 @@
 
     <div class="col-12">
       <q-card dark square flat>
-        <q-parallax src="statics/img/parallax-2.jpg" :height="600">
+        <q-parallax src="statics/img/parallax-2.jpg" :height="400">
           <q-card-section>
-            <div class="text-h2 q-mb-xl">Our Reach</div>
+            <div class="text-h2 q-mb-xl text-center">Our Reach</div>
 
-            <div class="row flex-center">
-              <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="flex flex-center">
+              <div class="col-md-4 col-sm-6 col-xs-12 q-px-md text-center ">
                 <span class="text-h3 text-weight-bold">28000</span>
                 <br />
                 <span class="text-p text-weight-medium">Rural Access to Healthy Food</span>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-md-4 col-sm-6 col-xs-12 q-px-md text-center">
                 <span class="text-h3 text-weight-bold">55000</span>
                 <br />
                 <span class="text-p text-weight-medium">Profitable Loans Disbursed</span>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-md-4 col-sm-6 col-xs-12 q-px-md text-center">
                 <span class="text-h3 text-weight-bold">100000</span>
                 <br />
                 <span class="text-p text-weight-medium">Farmers Targeted by 2025</span>
