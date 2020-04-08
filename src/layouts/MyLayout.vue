@@ -14,11 +14,11 @@
         <q-img src="statics/icons/logo.png" style="height: 60px; max-width: 55px" srcset />
         <q-space />
         <div class="row">
-          <q-btn color="primary" size="md" label="Purchase from BG" />
+          <q-btn color="primary" size="md" label="Join Agrolog" />
         </div>
 
         <div class="row">
-          <q-btn color="primary" size="md" label="MembersFinance BG Members" />
+          <q-btn color="primary" size="md" label="Agrolog Members" />
         </div>
       </q-bar>
       <q-toolbar>

@@ -72,7 +72,7 @@
             AgroLogis open to partnership with institutional as well as individual investors
             and Donor organisationsto structure financing packages for its smallholder farmer
             members for returns and social impac. for details
-            <q-btn color="negative" flat dense no-caps label="click" />
+            <q-btn color="primary" flat dense no-caps label="click" />
           </div>
         </q-card-section>
       </q-card>
@@ -105,7 +105,7 @@
           <div>
             Agrologprovides its community of farmers servces inboth backward and
             forward integrationcomponents of the value chains. To access service
-            <q-btn color="negative" flat dense no-caps label="click" />
+            <q-btn color="primary" flat dense no-caps label="click" />
           </div>
         </q-card-section>
       </q-card>
