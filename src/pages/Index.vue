@@ -2,26 +2,18 @@
   <q-page>
     <div class="col-12 full-width">
       <q-carousel v-model="slide">
-        <q-carousel-slide
-          :name="1"
-          img-src="statics/slides/slide.jpg"
-          class="row items-center"
-        >
+        <q-carousel-slide :name="1" img-src="statics/slides/slide.jpg" class="row items-center">
           <div class="text-white">
-            <div class="text-h2 text-bold">Agrolog Limited</div>
-            <div class="q-mt-md">
-              <p class="">
-                Promoting and supporting sustainable
-                <br />agriculture and food
-                production in Africa
-              </p>
-            </div>
+            <div class="text-h2 text-bold">Agrolog</div>
+            <div
+              class="text-h4 text-weight-light q-mt-md"
+            >creating innovations to lift the poor and transform them into the engine of economic growth</div>
           </div>
         </q-carousel-slide>
       </q-carousel>
     </div>
 
-    <div class="col-12 q-pa-xl">
+    <div class="col-12 q-px-xl q-py-lg">
       <div class="text-h2">WHO WE ARE</div>
       <div class="q-my-sm" style="width:200px">
         <q-separator color="primary" />
@@ -34,27 +26,92 @@
       </p>
     </div>
 
-    <div class="col-12 row">
-      
-      <q-card square>
-        <q-card-section>
-            Production Hub
-        </q-card-section>
-      </q-card>
-      <q-card square>
-        <q-card-section>
-            Production Hub
-        </q-card-section>
-      </q-card>
-      <q-card square>
-        <q-card-section>
-            Production Hub
-        </q-card-section>
-      </q-card>
-
+    <div class="col-12 row flex-center">
+      <div style="max-width: 750px" class="row flex-center">
+        <q-card flat class="col-md-4 col-sm-12">
+          <q-card-section class="row flex-center column">
+            <div>
+              <q-img src="statics/hub.png" style="width: 65px;" />
+            </div>
+            <div class="text-center" style="max-width: 200px">
+              We operate a hub at Kachia in Kaduna state where produce
+              is evaluated, graded, branded for the market as well as for value addition.
+            </div>
+          </q-card-section>
+        </q-card>
+        <q-card flat class="col-md-4 col-sm-12">
+          <q-card-section class="row flex-center column">
+            <div>
+              <q-img src="statics/groups.png" style="width: 65px;" />
+            </div>
+            <div class="text-center" style="max-width: 200px">
+              serviced by cooperative clusters from 12 Local Government
+              Areas that grow ginger.
+            </div>
+          </q-card-section>
+        </q-card>
+        <q-card flat class="col-md-4 col-sm-12">
+          <q-card-section class="row flex-center column">
+            <div>
+              <q-img src="statics/service.png" style="width: 65px;" />
+            </div>
+            <div class="text-center" style="max-width: 200px">
+              AgroLog is working to establish 10 service centers that will
+              provide farmers with mechanization
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
     </div>
 
-     <div class="col-12 q-gutter-xs">
+    <div class="col-12">
+      <q-card dark flat square>
+        <q-card-section class="row q-py-xl">
+          <div class="text-h4">HOW YOU CAN JOIN US</div>
+          <div>
+            AgroLogis open to partnership with institutional as well as individual investors
+            and Donor organisationsto structure financing packages for its smallholder farmer
+            members for returns and social impac. for details
+            <q-btn color="negative" flat dense no-caps label="click" />
+          </div>
+        </q-card-section>
+      </q-card>
+    </div>
+
+    <div class="col-12 q-px-xl q-py-lg">
+      <div class="text-h2">WHAT WE DO</div>
+      <div class="q-my-sm" style="width:200px">
+        <q-separator color="primary" />
+        <q-separator color="primary" />
+      </div>
+
+      <p>
+        We are growing a community of smallholder farmers to produce quality Ginger/Tumeric
+        and soy beans sustainably. Allproduce that meet the AgroLog seal of
+        quality arenurtured with a consciousness of a tradition of
+        responsibility at every stage from land preparation to harvest.
+        The core of that tradition being aflatoxin free, quality produce that meets
+        global best practices and standards. The overarching goal is create an enterprise
+        in farming for these smallholder farmers with social safety nets that assure them
+        and their families of a future that would otherwise remain elusive.
+        <q-btn flat no-caps dense color="secondary" label="Read More" :to="{name: 'about'}" />
+      </p>
+    </div>
+
+    <div class="col-12">
+      <q-card dark flat square>
+        <q-card-section class="row column q-py-xl">
+          <div class="text-h4">OUR SERVICES</div>
+          <div>
+            Agrologprovides its community of farmers servces inboth backward and
+            forward integrationcomponents of the value chains. To access service
+            <q-btn color="negative" flat dense no-caps label="click" />
+          </div>
+        </q-card-section>
+      </q-card>
+    </div>
+
+    <!-- <div class="col-12 q-gutter-xs">
       <q-card square>
         <q-parallax src="statics/img/parallax-1.jpg" :height="300">
           <div
@@ -70,8 +127,7 @@
           </div>
         </q-parallax>
       </q-card>
-    </div>
-
+    </div>-->
 
     <!-- <div class="col-12">
       <q-card flat square class="q-pa-md">
@@ -137,47 +193,35 @@
           </div>
         </q-card-section>
       </q-card>
-    </div> -->
+    </div>-->
 
-    <!-- <div class="col-12">
+    <div class="col-12">
       <q-card dark square flat>
         <q-parallax src="statics/img/parallax-2.jpg" :height="600">
           <q-card-section>
-            <div class="text-h5 text-center q-mb-xl">Helping small businesses grow and expand</div>
-            <div class="row flex-center q-gutter-lg">
-              <div class="text-center col-md-2 col-sm-3 col-xs-4">
-                <q-icon name="event" size="70px" />
+            <div class="text-h2 q-mb-xl">Our Reach</div>
+
+            <div class="row flex-center">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <span class="text-h3 text-weight-bold">28000</span>
                 <br />
-                <span class="text-h3 text-weight-bold">03+</span>
-                <br />
-                <span class="text-p text-weight-medium">Years of business operation</span>
+                <span class="text-p text-weight-medium">Rural Access to Healthy Food</span>
               </div>
-              <div class="text-center col-md-2 col-sm-3 col-xs-4">
-                <q-icon name="work_outline" size="70px" />
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <span class="text-h3 text-weight-bold">55000</span>
                 <br />
-                <span class="text-h3 text-weight-bold">30+</span>
-                <br />
-                <span class="text-p text-weight-medium">Our staff worldwide</span>
+                <span class="text-p text-weight-medium">Profitable Loans Disbursed</span>
               </div>
-              <div class="text-center col-md-2 col-sm-3 col-xs-4">
-                <q-icon name="verified_user" size="70px" />
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <span class="text-h3 text-weight-bold">100000</span>
                 <br />
-                <span class="text-h3 text-weight-bold">20+</span>
-                <br />
-                <span class="text-p text-weight-medium">Agro Award Winnings</span>
-              </div>
-              <div class="text-center col-md-2 col-sm-3 col-xs-4">
-                <q-icon name="people" size="70px" />
-                <br />
-                <span class="text-h3 text-weight-bold">80+</span>
-                <br />
-                <span class="text-p text-weight-medium">Our Satisfied Customers</span>
+                <span class="text-p text-weight-medium">Farmers Targeted by 2025</span>
               </div>
             </div>
           </q-card-section>
         </q-parallax>
       </q-card>
-    </div> -->
+    </div>
   </q-page>
 </template>
 

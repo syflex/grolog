@@ -79,8 +79,8 @@
       <router-view />
     </q-page-container>
 
-    <div class="bg-grey-9 text-center q-pa-xl">
-      <div class="text-h5 text-white text-weight-light">Agrolog Limited 2019</div>
+    <div class="bg-grey-10 text-center q-pa-sm">
+      <!-- <div class="text-h5 text-white text-weight-light">Agrolog Limited 2019</div> -->
       <div class="text-weight-thin text-grey-1">Copyright (C) 2019</div>
       <div>
         <a href="https://agrolog.farm:2096" target="_blank">Email</a>
