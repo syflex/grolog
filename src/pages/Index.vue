@@ -7,7 +7,7 @@
             <div class="q-px-md">
               <div class="text-h2 text-bold">Agrolog</div>
             <div
-              :class="($q.screen.lt.md?'text-subtitle1 ':'text-h4 ')+ 'text-weight-thin q-mt-md text-capitalize'"
+              :class="($q.screen.lt.md?'text-h5 ':'text-h4 ')+ 'text-weight-thin q-mt-md text-capitalize'"
             >creating innovations to lift the poor and transform them into the engine of economic growth</div>
           </div>
             </div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="text-h6 text-weight-light">Our Hub</div>
                 <div class="text-center text-caption" style="max-width: 200px">
-                  We operate a hub at Kachia in Kaduna state where produce
+                  We operate a Ginger Hub at Kachia in Kaduna state where produce
                   is evaluated, graded, branded for the market as well as for value addition.
                 </div>
               </q-card-section>
@@ -81,8 +81,9 @@
                 </div>
                 <div class="text-h6 text-weight-light">Clusters</div>
                 <div class="text-center" style="max-width: 200px">
-                  serviced by cooperative clusters from 12 Local Government
-                  Areas that grow ginger.
+                  Our community of farmers are organized in cooperative
+                  clusters across 12 Local Government
+                  Areas that grow ginger in Kaduna state.
                 </div>
               </q-card-section>
             </q-card>
@@ -96,8 +97,7 @@
                 </div>
                 <div class="text-h6 text-weight-light">Service Centers</div>
                 <div class="text-center" style="max-width: 200px">
-                  AgroLog is working to establish 10 service centers that will
-                  provide farmers with mechanization
+                  We have 10 service centers that serve the needs of our farmers.
                 </div>
               </q-card-section>
             </q-card>

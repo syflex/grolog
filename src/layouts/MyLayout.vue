@@ -21,7 +21,7 @@
         <div class="row">
           <q-btn no-caps color="primary" size="md" label="Agrolog Members" />
         </div>
-      </q-bar> -->
+      </q-bar>-->
       <q-toolbar class="gt-xs">
         <!-- <q-toolbar-title>
           <q-btn flat no-caps dense :to="{name: 'home'}">
@@ -31,29 +31,30 @@
         </q-toolbar-title>-->
 
         <!-- <div class="gt-xs row flex-center"> -->
-          <!-- <q-btn flat no-caps="" label="HOME" /> -->
-
-
+        <!-- <q-btn flat no-caps="" label="HOME" /> -->
 
         <!-- </div> -->
-          <div class="">
-            <img src="statics/icons/agrolog2.png" style="height: 30px; max-width: 55px" class="link" @click="()=>{$router.push({name: 'home'})}" />
-          </div>
-          <q-space />
-          <div class="row">
-             <q-btn flat no-caps label="About" :to="{name: 'about'}" />
-            <q-btn flat no-caps label="Our Activities" :to="{name: 'activities'}" />
-            <q-btn flat no-caps label="Our Business Partners" :to="{name: 'partners'}" />
-            <q-btn flat no-caps label="Contact" :to="{name: 'contact'}" />
-
-          </div>
-          <q-space />
-          <div class="row q-gutter-xs">
-            <q-btn no-caps color="white" text-color="primary" size="sm" label="Join Agrolog" />
-            <q-btn no-caps color="white" text-color="primary" size="sm" label="Agrolog Members" />
-          </div>
-
-
+        <div class>
+          <img
+            src="statics/icons/agrolog2.png"
+            style="height: 30px; max-width: 55px"
+            class="link"
+            @click="()=>{$router.push({name: 'home'})}"
+          />
+        </div>
+        <q-space />
+        <div class="row">
+          <q-btn flat no-caps label="About" :to="{name: 'about'}" />
+          <q-btn flat no-caps label="Our Activities" :to="{name: 'activities'}" />
+          <q-btn flat no-caps label="Our Business Partners" :to="{name: 'partners'}" />
+          <q-btn flat no-caps label="Contact" :to="{name: 'contact'}" />
+          <q-btn flat no-caps label="Social Safety Naets" :to="{name: 'socialSafety'}" />
+        </div>
+        <q-space />
+        <div class="row q-gutter-xs">
+          <q-btn no-caps color="white" text-color="primary" size="sm" label="Join Agrolog" />
+          <q-btn no-caps color="white" text-color="primary" size="sm" label="Agrolog Members" />
+        </div>
       </q-toolbar>
 
       <q-toolbar class="lt-sm">
@@ -68,11 +69,15 @@
           <q-icon name="menu" />
         </q-btn>
         <q-space />
-        <q-avatar >
-          <img src="statics/icons/agrolog2.png" style="height: 30px; max-width: 55px" class="link lt-sm" @click="()=>{$router.push({name: 'home'})}" />
+        <q-avatar>
+          <img
+            src="statics/icons/agrolog2.png"
+            style="height: 30px; max-width: 55px"
+            class="link lt-sm"
+            @click="()=>{$router.push({name: 'home'})}"
+          />
         </q-avatar>
       </q-toolbar>
-
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-primary">
@@ -86,6 +91,11 @@
         <q-item clickable tag="a" :to="{name: 'activities'}">
           <q-item-section>
             <q-item-label>Our Activities</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable tag="a" :to="{name: 'socialSafety'}">
+          <q-item-section>
+            <q-item-label>Social Safety Nets</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable tag="a" :to="{name: 'partners'}">

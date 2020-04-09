@@ -25,22 +25,21 @@
         creating chaos and disruptions in the ecosystem.
       </p>
       <p>
-        The desire to address this has taken us back to the fundamentals of food production: THE FARM. 
-        AgroLog seeks to entrench a culture of operational excellence that guarantees transparency from farm to table. 
-        The primary objective is traceability that ensures the consumer not only know the source but the quality of food on the table.        
-      </p>
-      <p>        
-        Consequently AgroLog has contrived partnerships through Innovation Platforms (IPs) that bring 
-        farmers and investors together enabling ecosystems that allow for backward integration that 
-        builds farmers capacities, flow of quality inputs, standardization of practices that ensure high 
-        productivity and quality outputs.         
+        The desire to address this has taken us back to the fundamentals of food production: THE FARM.
+        AgroLog seeks to entrench a culture of operational excellence that guarantees transparency from farm to table.
+        The primary objective is traceability that ensures the consumer not only know the source but the quality of food on the table.
       </p>
       <p>
-        On the forward integration front we work with partner clusters to achieve best practices in 
-        postharvest handling that deliver quality to the table. Our initial focus is on vegetables but our 
+        Consequently AgroLog has contrived partnerships through Innovation Platforms (IPs) that bring
+        farmers and investors together enabling ecosystems that allow for backward integration that
+        builds farmers capacities, flow of quality inputs, standardization of practices that ensure high
+        productivity and quality outputs.
+      </p>
+      <p>
+        On the forward integration front we work with partner clusters to achieve best practices in
+        postharvest handling that deliver quality to the table. Our initial focus is on vegetables but our
         network is growing to include commodities across the spectrum of agribusiness.
-        NO useless Mission Vision Goal and Objectives please! A visitor wants to see who we are and 
-        what we do and how to contact us. That’s all. No bullshitting please!
+        
       </p>
     </div>
   </q-page>

@@ -20,8 +20,6 @@
         <ul>
           <li>Farming.</li>
           <li>Production. </li>
-          <li>Animal breeding.</li>
-          <li>Poultry.</li>
           <li>Agrologistics.</li>
           <li>Value chain development. </li>
           <li>Cluster management. </li>
